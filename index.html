@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exam</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/bad478ab39.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container hide" id="questions">
+        <div class="row mt-5" style="width: 103%;">
+
+            <div class="progress pro">
+                <div class="progress-bar progress-bar-striped progress-bar-animated timing" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="row mt-3" style="background-color: whitesmoke;  height: 500px">
+            <div class="col-md-9 mb-5 Ques">
+
+                <!-- <p class="h3 mb-5 mt-5">%quest%</p> -->
+
+
+                <!-- <div class="form-check form-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="answer-1" value="Number">
+                    <label class="form-check-label" for="answer-1">
+                        Number
+                    </label>
+                </div>
+                <div class="form-check form-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="answer-2" value="String">
+                    <label class="form-check-label" for="answer-2">
+                        String
+                    </label>
+                </div>
+                <div class="form-check form-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="answer-3" value="Boolean">
+                    <label class="form-check-label" for="answer-3">
+                        Boolean
+                    </label>
+                </div>
+                <div class="form-check form-inline mb-5">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="answer-4" value="answer-4">
+                    <label class="form-check-label" for="answer-4">
+                        Undefined
+                    </label>
+                </div> -->
+
+                <!-- <div class="custom-control custom-radio mt-3">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"
+                        value="hamada">
+                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                </div>
+                <div class="custom-control custom-radio mt-3">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input"
+                        value="hamada2">
+                    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                </div> -->
+
+
+                <form class="quteform mt-5 mb-5">
+
+                    <!-- <div class="radiobtn">
+                        <input type="radio" id="%ansID%" name="drone" value="%ansValue%" />
+                        <label for="%ansLbl%">%ansValueTxt%</label>
+                    </div> -->
+
+                    <!-- <div class="radiobtn">
+                        <input type="radio" id="dewey" name="drone" value="dewey" />
+                        <label for="dewey">Dewey</label>
+                    </div>
+
+                    <div class="radiobtn">
+                        <input type="radio" id="louie" name="drone" value="louie" />
+                        <label for="louie">Louie</label>
+                    </div> -->
+
+                </form>
+
+
+
+
+
+                <nav class="d-flex flex-column align-self-end align-bottom  mt-2 mb-0 page"
+                    aria-label="Page navigation ">
+                    <ul class="pagination justify-content-center mt-5">
+                        <li class="page-item disabled">
+                            <a class="page-link" id="btn_prev" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link num">1</a></li>
+                        <li class="page-item" id="btn_next"><a class="page-link">Next</a>
+                        <li class=" btn btn-warning ml-5 markbtn">mark</li>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-3 overflow-auto markDiv">
+
+                <!-- <div class="markedQ p-2 m-2">mrk-Qestion2</div> -->
+
+            </div>
+        </div>
+        <div class="row mt-2 ">
+            <div class="col align-self-end">
+                <div class="btn btn-block btn-success sub">submit</div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="container-fluid scr bestLuck vh-100 hide">
+        <div class="container welcome_page">
+
+            <div class="col-12 align-self-center  align-middle fscor ">
+                <h1 class="display-5 text-center align-middle text-light">Great ... </h1>
+                <h5 class="display-6 text-center align-middle text-light"> Wish you best of luck .. stay tuned</h5 text-center align-middle
+                    text-light">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid scr timeUp vh-100 hide">
+        <div class="container welcome_page">
+
+            <div class="col-12 align-self-center  align-middle scor">
+                <h1 class="display-5 text-center align-middle text-light">SORRY!! </h1>
+                <h5 class="display-6 text-center align-middle text-light"> Time is up</h5>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid scr background vh-100 ">
+        <div class="container welcome_page">
+
+            <div class="col-xl-12 align-self-center  align-middle">
+                <h1 class="display-5 text-center align-middle text-light">Welcome </h1>
+                <h5 class="display-6 text-center align-middle text-light"> Please Enter your Name and your ID</h5
+                    text-center align-middle text-light">
+
+                <form>
+                    <div class="form-row align-items-center text-center align-middle">
+                        <div class="col-2"></div>
+                        <div class="col-xl-8 col-md-12 col-sm-12">
+                            <input type="text" class="form-control mb-2" id="name" placeholder="Your Name...">
+                            <input type="number" class="form-control mb-2" id="id" placeholder="Your ID...">
+                        </div>
+                        <!-- <div class="col-4"> -->
+                        <div class="col-xl-12 col-md-12 col-sm-12">
+                            <button type="button" class="btn btn-primary mb-2" onclick="startApp()"
+                                id="welcomeBtn">Start Exam</button>
+                        </div>
+                        <!-- </div> -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="lodash.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
